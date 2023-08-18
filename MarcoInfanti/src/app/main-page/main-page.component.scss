@@ -1,0 +1,25 @@
+
+.large-text {
+    font-size: 3rem;
+    color: white; 
+    text-align: center;
+    width: fit-content;
+  }
+
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .bottom-right-img {
+    width: 20%;
+}
+
+.rotate{
+    transform: rotate(-45deg); 
+}
+
+.flex-end{
+    display: flex;
+    justify-content: end;
+}

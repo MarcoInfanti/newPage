@@ -1,0 +1,49 @@
+<div class="p-2 nav-bar flex-column">
+    <div class="flex-column">
+        <div class="img-container box-shadow">
+            <img class="icon" src="../../../assets/icons/letra-m-_1_.webp" alt="letra m">
+        </div>
+        <span class="mt-1">Marco</span>
+    </div>
+    <div class="button-container">
+        <div class="flex center pt-1">
+            <button [ngClass]="this.lang === 'en' ? 'selected' : ''" mat-button (click)="changeLang('en')">
+                EN
+            </button>
+        </div>
+        <div class="flex center pt-1">
+            <button [ngClass]="this.lang === 'es' ? 'selected' : ''" mat-button (click)="changeLang('es')">
+                ES
+            </button>
+        </div>
+
+    </div>
+    <div class="button-container">
+        <div class="flex center pt-1 menu-icon">
+            <mat-icon class="icon" routerLink="aboutme" routerLinkActive="active-link" fontIcon="home"></mat-icon>
+        </div>
+        <div class="flex center pt-1 menu-icon">
+            <mat-icon fontIcon="business_center"></mat-icon>
+        </div>
+        <div class="flex center pt-1 menu-icon">
+            <mat-icon fontIcon="code"></mat-icon>
+        </div>
+        <div class="flex center pt-1 menu-icon">
+            <mat-icon fontIcon="school"></mat-icon>
+        </div>
+    </div>
+    <div class="mb-3 button-container">
+        <div class="flex center pt-1 menu-icon">
+            <mat-icon fontIcon="mail"></mat-icon>
+        </div>
+        <div class="flex center pt-1 menu-icon">
+            <mat-icon fontIcon="mail"></mat-icon>
+        </div>
+        <div class="flex center pt-1 menu-icon">
+            <mat-icon fontIcon="mail"></mat-icon>
+        </div>
+        <div class="flex center pt-1 menu-icon">
+            <mat-icon fontIcon="mail"></mat-icon>
+        </div>
+    </div>
+</div>

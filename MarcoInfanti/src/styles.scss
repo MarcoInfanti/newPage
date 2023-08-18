@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+@import "mixins";
+
+:root{
+    --color-primary: rgb(119, 0, 119);
+    --background-color: #212121;
+    --navbar-color: #383737;
+}
+
+$dark-purple: #340258; // Adjust the color as needed
+
+html, body { height: 100%; }
+
+body { 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: linear-gradient(to bottom right, #2c0d3b, #000000);
+}
+
+.flex{
+    display: flex ;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+}
+
+.center{
+    justify-content: center;
+}
+
+button:hover{
+    background-color: var(--color-primary);
+}
+
+.icon{
+    width: 65px;
+}
+
+.icon-display {
+    transform: scale(1.7);
+ }
+
+ .mat-mdc-button>.mat-icon {
+    margin-right: 0 !important;
+ }
+ 
+ .menu-icon:hover{
+    width: 100%;
+    cursor: pointer;
+    color: var(--color-primary);
+    background-color: #383737;
+ }
+ 
+ .menu-icon{
+    width: 100%;
+    cursor: pointer;
+ }
+
+ .button-container{
+    width: 100%;
+ }
+
+ .active-link{
+    cursor: pointer;
+    color: var(--color-primary);
+    background-color: #383737;
+ }
