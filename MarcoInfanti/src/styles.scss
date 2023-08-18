@@ -17,13 +17,6 @@ body {
     background: linear-gradient(to bottom right, #2c0d3b, #000000);
 }
 
-.flex{
-    display: flex ;
-    flex-wrap: wrap;
-    flex: 1;
-    width: 100%;
-}
-
 .flex-column{
     display: flex;
     flex-direction: column;
@@ -39,7 +32,7 @@ button:hover{
     background-color: var(--color-primary);
 }
 
-.icon{
+.logo{
     width: 65px;
 }
 
@@ -63,8 +56,15 @@ button:hover{
     cursor: pointer;
  }
 
- .button-container{
+ .nav-button-container{
     width: 100%;
+    &__button {
+        display: flex;
+        justify-content: center;
+    }
+    &__icon {
+        width: 65px;
+    }
  }
 
  .active-link{
