@@ -1,0 +1,22 @@
+.about-me{
+    display: flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+    color: white;
+    &__name{
+      text-align: center;
+      width: fit-content;
+      &--large-text {
+        font-size: 3rem;
+      }
+    }
+    &__career{
+      text-align: center;
+      width: fit-content;
+    }
+    &__description{
+      width: 50%;
+    }
+  }
