@@ -1,48 +1,48 @@
-<div class="nav-bar flex-column p-2">
-    <div class="flex-column">
-        <div class="img-container box-shadow">
-            <img class="logo" src="../../../assets/icons/letra-m-_1_.webp" alt="letra m">
+<div class="nav p-2">
+    <div class="nav__button-container">
+        <div class="logo box-shadow">
+            <img class="logo__image" src="../../../assets/icons/letra-m-_1_.webp" alt="letra m">
         </div>
-        <span class="mt-1">Marco</span>
+        <span class="nav__button-container nav__label mt-1">Marco</span>
     </div>
-    <div class="nav-button-container">
-        <div class="nav-button-container__button pt-1">
-            <button [ngClass]="this.lang === 'en' ? 'selected' : ''" mat-button (click)="changeLang('en')">
+    <div class="nav__button-container">
+        <div class="nav__button-container nav__lang pt-1">
+            <button [ngClass]="changeSelectedColor('en')" mat-button (click)="changeLang('en')">
                 EN
             </button>
         </div>
-        <div class="nav-button-container__button pt-1">
-            <button [ngClass]="this.lang === 'es' ? 'selected' : ''" mat-button (click)="changeLang('es')">
+        <div class="nav__button-container nav__lang pt-1">
+            <button [ngClass]="changeSelectedColor('es')" mat-button (click)="changeLang('es')">
                 ES
             </button>
         </div>
 
     </div>
-    <div class="nav-button-container">
-        <div class="nav-button-container__button pt-2">
+    <div class="nav__button-container">
+        <div class="nav__button-container nav__button pt-2">
             <mat-icon routerLink="aboutme" routerLinkActive="active-link" fontIcon="home"></mat-icon>
         </div>
-        <div class="nav-button-container__button pt-2">
+        <div class="nav__button-container nav__button pt-2" routerLinkActive="active-link">
             <mat-icon fontIcon="business_center"></mat-icon>
         </div>
-        <div class="nav-button-container__button pt-2">
+        <div class="nav__button-container nav__button pt-2" routerLinkActive="active-link">
             <mat-icon fontIcon="code"></mat-icon>
         </div>
-        <div class="nav-button-container__button pt-2">
+        <div class="nav__button-container nav__button pt-2" routerLinkActive="active-link">
             <mat-icon fontIcon="school"></mat-icon>
         </div>
     </div>
-    <div class="nav-button-container mb-3">
-        <div class="nav-button-container__button pt-2">
+    <div class="nav__button-container mb-3">
+        <div class="nav__button-container nav__button pt-2">
             <mat-icon fontIcon="mail"></mat-icon>
         </div>
-        <div class="nav-button-container__button pt-2">
+        <div class="nav__button-container nav__button pt-2">
             <mat-icon fontIcon="mail"></mat-icon>
         </div>
-        <div class="nav-button-container__button pt-2">
+        <div class="nav__button-container nav__button pt-2">
             <mat-icon fontIcon="mail"></mat-icon>
         </div>
-        <div class="nav-button-container__button pt-2">
+        <div class="nav__button-container nav__button pt-2">
             <mat-icon fontIcon="mail"></mat-icon>
         </div>
     </div>

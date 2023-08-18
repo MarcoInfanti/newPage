@@ -14,4 +14,8 @@ export class SideNavbarComponent {
     this.lang = lang;
   }
 
+  changeSelectedColor(lang: string): string {
+    return lang === this.lang ? 'nav__lang--selected' : 'nav__lang'
+  }
+
 }
